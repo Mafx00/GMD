@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class EnemieBullet : MonoBehaviour
 {
-    public Slider healthBar;
-    public GameObject Enemie;
+    public GameObject healthBar;
+    private Slider healthBarComponent;
 
     public AudioSource hitSound;
 
@@ -14,6 +14,9 @@ public class EnemieBullet : MonoBehaviour
     void Start()
     {
         Destroy(this.gameObject, 3);
+        healthBar = GameObject.Find("HealthBar");
+        healthBarComponent = healthBar.GetComponent<Slider>();
+
     }
 
     // Update is called once per frame
@@ -25,7 +28,7 @@ public class EnemieBullet : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            healthBar.value -= 1;
+            healthBarComponent.value -= 1;
             hitSound.Play();
             Destroy(this.gameObject);
         }

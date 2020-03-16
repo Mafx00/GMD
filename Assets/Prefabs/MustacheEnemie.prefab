@@ -4710,6 +4710,7 @@ GameObject:
   - component: {fileID: 8295782783995447791}
   - component: {fileID: 3044633695976239516}
   - component: {fileID: 7520205951370156397}
+  - component: {fileID: 975617376737750132}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -4789,6 +4790,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &975617376737750132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7042141136615998164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 366b8c2d0e086a34982b1460dc1b39ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 0}
+  bullet: {fileID: 0}
+  speed: 15
 --- !u!1 &7739119649839252157
 GameObject:
   m_ObjectHideFlags: 0
@@ -4802,6 +4818,8 @@ GameObject:
   - component: {fileID: 4327371092490207920}
   - component: {fileID: 2313693176778384314}
   - component: {fileID: 4412250569354789610}
+  - component: {fileID: 790811105545183558}
+  - component: {fileID: 6689658840360604189}
   m_Layer: 0
   m_Name: MustacheEnemie
   m_TagString: MustacheEnemie
@@ -4898,6 +4916,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreObject: {fileID: 8068206459454421903}
   lights: {fileID: 1473640004852536851}
+--- !u!195 &790811105545183558
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7739119649839252157}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &6689658840360604189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7739119649839252157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea72fe8223a9e649b06107f42d6884b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!1001 &8354648108899767931
 PrefabInstance:
   m_ObjectHideFlags: 0

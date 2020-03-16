@@ -22,6 +22,8 @@ public class EnemieScore : MonoBehaviour
     public void addScoreObject()
     {
         scoreObject.SetActive(true);
+        scoreObject.GetComponent<EnemieShoot>().enabled = false;
+        scoreObject.GetComponent<EnemieMovement>().enabled = false;
         mainLights.startColor = Color.green;
     }
 }

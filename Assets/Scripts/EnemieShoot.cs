@@ -26,7 +26,7 @@ public class EnemieShoot : MonoBehaviour
         targetPosition =  Target.transform.position;
         distance = targetPosition - transform.position;
 
-       if(distance.magnitude < 10 && isShooting)
+       if(distance.magnitude < 10 && distance.magnitude > 2 && isShooting)
         {
             StartCoroutine(Shoot());
         }
@@ -40,7 +40,7 @@ public class EnemieShoot : MonoBehaviour
         bulletRB.AddForce(direction * speed);
 
         isShooting = false;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         isShooting = true;
     }
 }

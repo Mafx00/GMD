@@ -5,16 +5,14 @@ using UnityEngine.UI;
 
 public class EnemieBullet : MonoBehaviour
 {
-    public GameObject healthBar;
+    public Slider healthBar;
     private Slider healthBarComponent;
-
-    public AudioSource hitSound;
 
     // Start is called before the first frame update
     void Start()
     {
         Destroy(this.gameObject, 3);
-        healthBar = GameObject.Find("HealthBar");
+        healthBar = (Slider) Canvas.FindObjectOfType(typeof(Slider));
         healthBarComponent = healthBar.GetComponent<Slider>();
 
     }
@@ -22,14 +20,13 @@ public class EnemieBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
             healthBarComponent.value -= 1;
-            hitSound.Play();
             Destroy(this.gameObject);
         }
     }

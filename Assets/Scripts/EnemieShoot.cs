@@ -6,31 +6,41 @@ public class EnemieShoot : MonoBehaviour
 {
 
     public GameObject Target;
-    private Vector3 targetPosition;
-    private Vector3 offset;
+    public GameObject bullet;
+    public float speed;
 
+    private Rigidbody bulletRB;
+    private Vector3 targetPosition;
+    private Vector3 distance;
     private bool isShooting;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        isShooting = true;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-      targetPosition =  Target.transform.position;
-        offset = targetPosition - transform.position;
+        targetPosition =  Target.transform.position;
+        distance = targetPosition - transform.position;
 
-        if(offset.magnitude < 5)
+       if(distance.magnitude < 10 && isShooting)
         {
-            isShooting = true;
+            StartCoroutine(Shoot());
         }
 
-        if (offset.magnitude > 5)
-        {
-            isShooting = true;
-        }
+    }
+
+    IEnumerator Shoot()
+    {
+       bulletRB = Instantiate(bullet, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+        Vector3 direction = ( Target.transform.position - transform.position).normalized;
+        bulletRB.AddForce(direction * speed);
+
+        isShooting = false;
+        yield return new WaitForSeconds(2);
+        isShooting = true;
     }
 }

@@ -24,11 +24,12 @@ public class PlayerMovement : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
-        moveDirection = transform.right * moveHorizontal + transform.forward * moveVertical;
-
+        moveDirection = transform.forward * moveVertical;
+        
+        player.transform.Rotate(Vector3.up, 50f * Time.deltaTime * moveHorizontal);
         player.Move(moveDirection * speed * Time.deltaTime);
 
-        velocity.y += -0.1f * Time.deltaTime;
+        velocity.y += -0.2f * Time.deltaTime;
         player.Move(velocity * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.Space) && player.transform.position.y < 2)

@@ -1,0 +1,341 @@
+fileFormatVersion: 2
+guid: 7715d578b0bcad24097ef3a54dabc96c
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Camera
+    100004: DOVE TAIL
+    100006: Left-Light-Emitter
+    100008: MAG
+    100010: MAG.001
+    100012: MAG.002
+    100014: Point
+    100016: Point.002
+    100018: Point.003
+    100020: Right-Light-Emitter
+    100022: SIGHT F
+    100024: Studio-Floor
+    100026: Studio-Floor.001
+    100028: Top-Light-Emitter
+    100030: TRIGGER
+    400000: //RootNode
+    400002: Camera
+    400004: DOVE TAIL
+    400006: Left-Light-Emitter
+    400008: MAG
+    400010: MAG.001
+    400012: MAG.002
+    400014: Point
+    400016: Point.002
+    400018: Point.003
+    400020: Right-Light-Emitter
+    400022: SIGHT F
+    400024: Studio-Floor
+    400026: Studio-Floor.001
+    400028: Top-Light-Emitter
+    400030: TRIGGER
+    2000000: Camera
+    2100000: Studio-Floor
+    2100002: METAL end barrel
+    2100004: METAL.002
+    2100006: Wood AK47
+    2100008: metal square side
+    2100010: mag metal
+    2100012: METAL.004
+    2100014: METAL trigger
+    2100016: Emitter-top
+    2100018: Emitter-Right
+    2100020: Emitter-Left
+    2300000: DOVE TAIL
+    2300002: Left-Light-Emitter
+    2300004: MAG
+    2300006: MAG.001
+    2300008: MAG.002
+    2300010: Right-Light-Emitter
+    2300012: SIGHT F
+    2300014: Studio-Floor
+    2300016: Studio-Floor.001
+    2300018: Top-Light-Emitter
+    2300020: TRIGGER
+    3300000: DOVE TAIL
+    3300002: Left-Light-Emitter
+    3300004: MAG
+    3300006: MAG.001
+    3300008: MAG.002
+    3300010: Right-Light-Emitter
+    3300012: SIGHT F
+    3300014: Studio-Floor
+    3300016: Studio-Floor.001
+    3300018: Top-Light-Emitter
+    3300020: TRIGGER
+    4300000: Studio-Floor.001
+    4300002: MAG.002
+    4300004: MAG.001
+    4300006: DOVE TAIL
+    4300008: MAG
+    4300010: SIGHT F
+    4300012: TRIGGER
+    4300014: Top-Light-Emitter
+    4300016: Right-Light-Emitter
+    4300018: Left-Light-Emitter
+    4300020: Studio-Floor
+    7400000: Studio-Floor.001|CameraAction
+    7400002: Studio-Floor.001|DOVE TAILAction
+    7400004: Studio-Floor.001|Left-Light-EmitterAction
+    7400006: Studio-Floor.001|MAG.001Action
+    7400008: Studio-Floor.001|MAG.002Action
+    7400010: Studio-Floor.001|MAGAction
+    7400012: Studio-Floor.001|Point.003Action
+    7400014: Studio-Floor.001|Right-Light-EmitterAction
+    7400016: Studio-Floor.001|SIGHT FAction
+    7400018: Studio-Floor.001|Studio-FloorAction
+    7400020: Studio-Floor.001|Studio-FloorAction.002
+    7400022: Studio-Floor.001|Top-Light-EmitterAction
+    7400024: Studio-Floor.001|TRIGGERAction
+    7400026: MAG.002|CameraAction
+    7400028: MAG.002|DOVE TAILAction
+    7400030: MAG.002|Left-Light-EmitterAction
+    7400032: MAG.002|MAG.001Action
+    7400034: MAG.002|MAG.002Action
+    7400036: MAG.002|MAGAction
+    7400038: MAG.002|Point.003Action
+    7400040: MAG.002|Right-Light-EmitterAction
+    7400042: MAG.002|SIGHT FAction
+    7400044: MAG.002|Studio-FloorAction
+    7400046: MAG.002|Studio-FloorAction.002
+    7400048: MAG.002|Top-Light-EmitterAction
+    7400050: MAG.002|TRIGGERAction
+    7400052: MAG.001|CameraAction
+    7400054: MAG.001|DOVE TAILAction
+    7400056: MAG.001|Left-Light-EmitterAction
+    7400058: MAG.001|MAG.001Action
+    7400060: MAG.001|MAG.002Action
+    7400062: MAG.001|MAGAction
+    7400064: MAG.001|Point.003Action
+    7400066: MAG.001|Right-Light-EmitterAction
+    7400068: MAG.001|SIGHT FAction
+    7400070: MAG.001|Studio-FloorAction
+    7400072: MAG.001|Studio-FloorAction.002
+    7400074: MAG.001|Top-Light-EmitterAction
+    7400076: MAG.001|TRIGGERAction
+    7400078: DOVE TAIL|CameraAction
+    7400080: DOVE TAIL|DOVE TAILAction
+    7400082: DOVE TAIL|Left-Light-EmitterAction
+    7400084: DOVE TAIL|MAG.001Action
+    7400086: DOVE TAIL|MAG.002Action
+    7400088: DOVE TAIL|MAGAction
+    7400090: DOVE TAIL|Point.003Action
+    7400092: DOVE TAIL|Right-Light-EmitterAction
+    7400094: DOVE TAIL|SIGHT FAction
+    7400096: DOVE TAIL|Studio-FloorAction
+    7400098: DOVE TAIL|Studio-FloorAction.002
+    7400100: DOVE TAIL|Top-Light-EmitterAction
+    7400102: DOVE TAIL|TRIGGERAction
+    7400104: MAG|CameraAction
+    7400106: MAG|DOVE TAILAction
+    7400108: MAG|Left-Light-EmitterAction
+    7400110: MAG|MAG.001Action
+    7400112: MAG|MAG.002Action
+    7400114: MAG|MAGAction
+    7400116: MAG|Point.003Action
+    7400118: MAG|Right-Light-EmitterAction
+    7400120: MAG|SIGHT FAction
+    7400122: MAG|Studio-FloorAction
+    7400124: MAG|Studio-FloorAction.002
+    7400126: MAG|Top-Light-EmitterAction
+    7400128: MAG|TRIGGERAction
+    7400130: SIGHT F|CameraAction
+    7400132: SIGHT F|DOVE TAILAction
+    7400134: SIGHT F|Left-Light-EmitterAction
+    7400136: SIGHT F|MAG.001Action
+    7400138: SIGHT F|MAG.002Action
+    7400140: SIGHT F|MAGAction
+    7400142: SIGHT F|Point.003Action
+    7400144: SIGHT F|Right-Light-EmitterAction
+    7400146: SIGHT F|SIGHT FAction
+    7400148: SIGHT F|Studio-FloorAction
+    7400150: SIGHT F|Studio-FloorAction.002
+    7400152: SIGHT F|Top-Light-EmitterAction
+    7400154: SIGHT F|TRIGGERAction
+    7400156: TRIGGER|CameraAction
+    7400158: TRIGGER|DOVE TAILAction
+    7400160: TRIGGER|Left-Light-EmitterAction
+    7400162: TRIGGER|MAG.001Action
+    7400164: TRIGGER|MAG.002Action
+    7400166: TRIGGER|MAGAction
+    7400168: TRIGGER|Point.003Action
+    7400170: TRIGGER|Right-Light-EmitterAction
+    7400172: TRIGGER|SIGHT FAction
+    7400174: TRIGGER|Studio-FloorAction
+    7400176: TRIGGER|Studio-FloorAction.002
+    7400178: TRIGGER|Top-Light-EmitterAction
+    7400180: TRIGGER|TRIGGERAction
+    7400182: Point.003|CameraAction
+    7400184: Point.003|DOVE TAILAction
+    7400186: Point.003|Left-Light-EmitterAction
+    7400188: Point.003|MAG.001Action
+    7400190: Point.003|MAG.002Action
+    7400192: Point.003|MAGAction
+    7400194: Point.003|Point.003Action
+    7400196: Point.003|Right-Light-EmitterAction
+    7400198: Point.003|SIGHT FAction
+    7400200: Point.003|Studio-FloorAction
+    7400202: Point.003|Studio-FloorAction.002
+    7400204: Point.003|Top-Light-EmitterAction
+    7400206: Point.003|TRIGGERAction
+    7400208: Top-Light-Emitter|CameraAction
+    7400210: Top-Light-Emitter|DOVE TAILAction
+    7400212: Top-Light-Emitter|Left-Light-EmitterAction
+    7400214: Top-Light-Emitter|MAG.001Action
+    7400216: Top-Light-Emitter|MAG.002Action
+    7400218: Top-Light-Emitter|MAGAction
+    7400220: Top-Light-Emitter|Point.003Action
+    7400222: Top-Light-Emitter|Right-Light-EmitterAction
+    7400224: Top-Light-Emitter|SIGHT FAction
+    7400226: Top-Light-Emitter|Studio-FloorAction
+    7400228: Top-Light-Emitter|Studio-FloorAction.002
+    7400230: Top-Light-Emitter|Top-Light-EmitterAction
+    7400232: Top-Light-Emitter|TRIGGERAction
+    7400234: Right-Light-Emitter|CameraAction
+    7400236: Right-Light-Emitter|DOVE TAILAction
+    7400238: Right-Light-Emitter|Left-Light-EmitterAction
+    7400240: Right-Light-Emitter|MAG.001Action
+    7400242: Right-Light-Emitter|MAG.002Action
+    7400244: Right-Light-Emitter|MAGAction
+    7400246: Right-Light-Emitter|Point.003Action
+    7400248: Right-Light-Emitter|Right-Light-EmitterAction
+    7400250: Right-Light-Emitter|SIGHT FAction
+    7400252: Right-Light-Emitter|Studio-FloorAction
+    7400254: Right-Light-Emitter|Studio-FloorAction.002
+    7400256: Right-Light-Emitter|Top-Light-EmitterAction
+    7400258: Right-Light-Emitter|TRIGGERAction
+    7400260: Left-Light-Emitter|CameraAction
+    7400262: Left-Light-Emitter|DOVE TAILAction
+    7400264: Left-Light-Emitter|Left-Light-EmitterAction
+    7400266: Left-Light-Emitter|MAG.001Action
+    7400268: Left-Light-Emitter|MAG.002Action
+    7400270: Left-Light-Emitter|MAGAction
+    7400272: Left-Light-Emitter|Point.003Action
+    7400274: Left-Light-Emitter|Right-Light-EmitterAction
+    7400276: Left-Light-Emitter|SIGHT FAction
+    7400278: Left-Light-Emitter|Studio-FloorAction
+    7400280: Left-Light-Emitter|Studio-FloorAction.002
+    7400282: Left-Light-Emitter|Top-Light-EmitterAction
+    7400284: Left-Light-Emitter|TRIGGERAction
+    7400286: Studio-Floor|CameraAction
+    7400288: Studio-Floor|DOVE TAILAction
+    7400290: Studio-Floor|Left-Light-EmitterAction
+    7400292: Studio-Floor|MAG.001Action
+    7400294: Studio-Floor|MAG.002Action
+    7400296: Studio-Floor|MAGAction
+    7400298: Studio-Floor|Point.003Action
+    7400300: Studio-Floor|Right-Light-EmitterAction
+    7400302: Studio-Floor|SIGHT FAction
+    7400304: Studio-Floor|Studio-FloorAction
+    7400306: Studio-Floor|Studio-FloorAction.002
+    7400308: Studio-Floor|Top-Light-EmitterAction
+    7400310: Studio-Floor|TRIGGERAction
+    7400312: Camera|CameraAction
+    7400314: Camera|DOVE TAILAction
+    7400316: Camera|Left-Light-EmitterAction
+    7400318: Camera|MAG.001Action
+    7400320: Camera|MAG.002Action
+    7400322: Camera|MAGAction
+    7400324: Camera|Point.003Action
+    7400326: Camera|Right-Light-EmitterAction
+    7400328: Camera|SIGHT FAction
+    7400330: Camera|Studio-FloorAction
+    7400332: Camera|Studio-FloorAction.002
+    7400334: Camera|Top-Light-EmitterAction
+    7400336: Camera|TRIGGERAction
+    9500000: //RootNode
+    10800000: Point
+    10800002: Point.002
+    10800004: Point.003
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemieScore : MonoBehaviour
 {
     public GameObject scoreObject;
+    public GameObject scoreObject2;
+    public GameObject removeWhenScore;
 
     public ParticleSystem lights;
 
@@ -22,8 +25,10 @@ public class EnemieScore : MonoBehaviour
     public void addScoreObject()
     {
         scoreObject.SetActive(true);
+        scoreObject2.SetActive(true);
+        removeWhenScore.SetActive(false);
         scoreObject.GetComponent<EnemieShoot>().enabled = false;
-        scoreObject.GetComponent<EnemieMovement>().enabled = false;
+        this.gameObject.GetComponent<NavMeshAgent>().enabled = false;
         mainLights.startColor = Color.green;
     }
 }

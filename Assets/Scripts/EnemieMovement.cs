@@ -6,7 +6,10 @@ using UnityEngine.AI;
 public class EnemieMovement : MonoBehaviour
 {
     public Transform target;
+    public Animator movement;
+    public float distance;
 
+    private float isWalking = 1;
     private NavMeshAgent navMeshAgent;
     private Vector3 targetPosition;
 
@@ -21,9 +24,19 @@ public class EnemieMovement : MonoBehaviour
     {
         targetPosition = target.transform.position;
 
-        if((targetPosition - transform.position).magnitude < 40 )
+        if(((targetPosition - transform.position).magnitude <= distance) &&  isWalking == 0)
         {
+            isWalking = 1;
+            movement.SetFloat("Blend", 1f);
             navMeshAgent.SetDestination(targetPosition);
+        }
+        if (((targetPosition - transform.position).magnitude > distance) && isWalking == 1)
+        {
+            Debug.Log(movement.GetFloat("Blend"));
+
+            isWalking = 0;
+            navMeshAgent.SetDestination(transform.position); 
+            movement.SetFloat("Blend", 0f);
         }
     }
 }

@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
 
-    public Renderer mustacheGun;
-    public Renderer rainbowGun;
+    public GameObject mustacheGun;
+    public GameObject rainbowGun;
 
     public Shoot mustacheGunScript;
     public Shoot rainbowGunScript;
@@ -24,8 +24,8 @@ public class Player : MonoBehaviour
 
         if (other.gameObject.CompareTag("RainbowGun"))
         {
-            mustacheGun.enabled = false;
-            rainbowGun.enabled = true;
+            mustacheGun.SetActive(false);
+            rainbowGun.SetActive(true);
             mustacheGunScript.enabled = false;
             rainbowGunScript.enabled = true;
             pickedUpRainbow.Play();
@@ -33,8 +33,8 @@ public class Player : MonoBehaviour
 
         if (other.gameObject.CompareTag("MustacheGun"))
         {
-            mustacheGun.enabled = true;
-            rainbowGun.enabled = false;
+            mustacheGun.SetActive(true);
+            rainbowGun.SetActive(false);
             mustacheGunScript.enabled = true;
             rainbowGunScript.enabled = false;
             pickedUpMustache.Play();

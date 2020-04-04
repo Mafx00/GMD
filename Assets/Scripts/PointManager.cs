@@ -20,7 +20,6 @@ public class PointManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.visible = false;
         score = 0;
         scoreText.text = "SHOOT"; 
 

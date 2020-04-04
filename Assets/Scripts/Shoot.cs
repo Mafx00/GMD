@@ -44,15 +44,19 @@ public class Shoot : MonoBehaviour
 
                 else
                 {
-                    Instantiate(paint, hit.point, Quaternion.identity);
-                   paint.transform.LookAt(hit.point + hit.normal);
+                    if (hit.transform.name == "Wall")
+                    {
+                        Instantiate(paint, hit.point, Quaternion.identity);
+                        paint.transform.LookAt(hit.point + hit.normal);
+
+                    }
                 }
 
                 }
             
             }
                 Vector3 direction = hit.point - gun.position;
-                gun.rotation = Quaternion.LookRotation(direction);
+                gun.rotation = Quaternion.LookRotation(-direction);
         }
     
 }

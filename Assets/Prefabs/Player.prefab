@@ -104,7 +104,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7d3263012eb5f141b500d510e76e768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointManager: {fileID: 0}
   gun: {fileID: 0}
+  gunName: 
   paint: {fileID: 0}
   fpsCam: {fileID: 0}
 --- !u!1 &1760794007275990037
@@ -359,6 +361,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7d3263012eb5f141b500d510e76e768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointManager: {fileID: 0}
   gun: {fileID: 3100620867798403520}
+  gunName: 
   paint: {fileID: 2020334163316895220, guid: d0e0b1e75eb448341a1ec30ed6615b40, type: 3}
   fpsCam: {fileID: 0}

@@ -5,9 +5,9 @@ using UnityEngine;
 public class GunHolder : MonoBehaviour
 {
     public GameObject gun;
+
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -18,7 +18,8 @@ public class GunHolder : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        StartCoroutine(pickGunUp());
+        Destroy(this.gameObject, 1f);
+      //  StartCoroutine(pickGunUp());
 
     }
 

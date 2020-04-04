@@ -44,8 +44,8 @@ public class Shoot : MonoBehaviour
 
                 else
                 {
-                    Instantiate(paint, hit.point, hit.transform.rotation);
-                    paint.transform.LookAt(hit.point + hit.normal);
+                    Instantiate(paint, hit.point, Quaternion.identity);
+                   paint.transform.LookAt(hit.point + hit.normal);
                 }
 
                 }

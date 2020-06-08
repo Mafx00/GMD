@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
 
     public AudioSource pickedUpRainbow;
     public AudioSource pickedUpMustache;
+    public AudioSource gotHitsound;
 
     public Slider slider;
 
@@ -43,6 +44,7 @@ public class Player : MonoBehaviour
         if (other.gameObject.CompareTag("Enemie"))
         {
             slider.value -= 1;
+            gotHitsound.Play();
         }
 
         if (other.gameObject.CompareTag("EnemieButton"))
@@ -52,8 +54,12 @@ public class Player : MonoBehaviour
 
         if (other.gameObject.CompareTag("Health"))
         {
-            slider.value = 5;
+            slider.value = 10;
         }
+<<<<<<< HEAD
+
+=======
+>>>>>>> parent of f3f2fbf... Enemies and weapons working
     }
 
 }

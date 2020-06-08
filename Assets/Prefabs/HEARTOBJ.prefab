@@ -100,7 +100,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871401512370320427}
+<<<<<<< HEAD
+  m_LocalRotation: {x: 0.05500892, y: 0.85268664, z: -0.09172733, w: 0.5113567}
+=======
   m_LocalRotation: {x: 0.0554264, y: 0.92620647, z: -0.15044644, w: 0.34122637}
+>>>>>>> parent of f3f2fbf... Enemies and weapons working
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

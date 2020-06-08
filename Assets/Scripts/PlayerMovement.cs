@@ -26,15 +26,15 @@ public class PlayerMovement : MonoBehaviour
 
         moveDirection = transform.forward * moveVertical;
         
-        player.transform.Rotate(Vector3.up, 50f * Time.deltaTime * moveHorizontal);
+      //  player.transform.Rotate(Vector3.up, 90f * Time.deltaTime * moveHorizontal);
         player.Move(moveDirection * speed * Time.deltaTime);
 
-        velocity.y += -0.2f * Time.deltaTime;
+        velocity.y += -0.4f * Time.deltaTime;
         player.Move(velocity * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.Space) && player.transform.position.y < 2)
         {
-            player.Move(Vector3.up * 30 * speed * Time.deltaTime);
+            player.Move(Vector3.up * 25 * speed * Time.deltaTime);
 
             // player.transform.position += Vector3.up * 7;
         }

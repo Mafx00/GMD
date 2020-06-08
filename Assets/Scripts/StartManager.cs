@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class StartManager : MonoBehaviour
@@ -12,12 +13,6 @@ public class StartManager : MonoBehaviour
     void Start()
     {
         StartCoroutine(MustacheStart());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public IEnumerator MustacheStart()
@@ -37,4 +32,25 @@ public class StartManager : MonoBehaviour
         onClickSound.Play();
         SceneManager.LoadScene(2);
     }
+
+    public void SettingsButton()
+    {
+        onClickSound.Play();
+        SceneManager.LoadScene(5);
+    }
+    public void ReturnToStart()
+    {
+        onClickSound.Play();
+        SceneManager.LoadScene(0);
+    }
+
+
+  /* public void SetSoundOn()
+    {
+        mixer.SetFloat("sound", -5);
+    }
+    public void SetSoundOff()
+    {
+        mixer.SetFloat("sound", -80);
+    } */
 }

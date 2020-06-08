@@ -9,8 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: GunHolder
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _EMISSION
-  m_LightmapFlags: 2
+  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3000
@@ -62,9 +62,9 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 10
     - _GlossMapScale: 1
-    - _Glossiness: 0.446
+    - _Glossiness: 0.297
     - _GlossyReflections: 1
-    - _Metallic: 0
+    - _Metallic: 0.117
     - _Mode: 3
     - _OcclusionStrength: 1
     - _Parallax: 0.02
@@ -74,5 +74,5 @@ Material:
     - _UVSec: 0
     - _ZWrite: 0
     m_Colors:
-    - _Color: {r: 0.19450872, g: 0.75587964, b: 0.8773585, a: 0.44705883}
+    - _Color: {r: 0.38714847, g: 0.8442946, b: 0.9433962, a: 0.09019608}
     - _EmissionColor: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 1}

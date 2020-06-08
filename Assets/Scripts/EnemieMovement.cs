@@ -16,27 +16,30 @@ public class EnemieMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        target = GameObject.Find("Player").transform;
+        //.FindGameObjectWithTag("Player").transform;
         navMeshAgent = this.GetComponent<NavMeshAgent>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
         targetPosition = target.transform.position;
+        Debug.Log(target.name);
 
-        if(((targetPosition - transform.position).magnitude <= distance) &&  isWalking == 0)
+        if ((targetPosition - transform.position).magnitude <= distance)
         {
-            isWalking = 1;
             movement.SetFloat("Blend", 1f);
             navMeshAgent.SetDestination(targetPosition);
         }
-        if (((targetPosition - transform.position).magnitude > distance) && isWalking == 1)
-        {
-            Debug.Log(movement.GetFloat("Blend"));
 
-            isWalking = 0;
+        if ((targetPosition - transform.position).magnitude > distance)
+        {
             navMeshAgent.SetDestination(transform.position); 
             movement.SetFloat("Blend", 0f);
+
         }
+
     }
 }

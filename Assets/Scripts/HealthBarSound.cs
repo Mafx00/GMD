@@ -22,11 +22,6 @@ public class HealthBarSound : MonoBehaviour
     void Update()
     {
         currentHealth = healthBar.value;
-        if(currentHealth < health)
-        {
-            lostHealthSound.Play();
-            health = currentHealth;
-        }
 
         if(currentHealth > health)
         {

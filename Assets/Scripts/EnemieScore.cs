@@ -17,8 +17,12 @@ public class EnemieScore : MonoBehaviour
     void Start()
     {
         scoreObject.GetComponent<GameObject>();
+<<<<<<< HEAD
+        mainLights = lights.GetComponent<ParticleSystem>().main;
+=======
     mainLights = lights.GetComponent<ParticleSystem>().main;
 
+>>>>>>> parent of f3f2fbf... Enemies and weapons working
     }
 
 
@@ -27,8 +31,22 @@ public class EnemieScore : MonoBehaviour
         scoreObject.SetActive(true);
         scoreObject2.SetActive(true);
         removeWhenScore.SetActive(false);
+<<<<<<< HEAD
+
+        if (transform.name != "GorillaBoss")
+        {
+            Debug.Log(transform.name);
+
+            this.gameObject.GetComponent<Animator>().SetFloat("Blend", 0);
+            this.gameObject.GetComponent<EnemieMovement>().enabled = false;
+        }
+
+=======
         scoreObject.GetComponent<EnemieShoot>().enabled = false;
         this.gameObject.GetComponent<NavMeshAgent>().enabled = false;
+>>>>>>> parent of f3f2fbf... Enemies and weapons working
         mainLights.startColor = Color.green;
+        this.enabled = false;
+
     }
 }

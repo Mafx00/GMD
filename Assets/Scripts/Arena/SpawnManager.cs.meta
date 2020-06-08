@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 6f2ed94a74bebdc4684b021d7d9a0a3a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - spawnLocation1: {instanceID: 0}
+  - spawnLocation2: {instanceID: 0}
+  - spawnLocation3: {instanceID: 0}
+  - spawnLocation4: {instanceID: 0}
+  - spawnLocation5: {instanceID: 0}
+  - spawnLocation6: {instanceID: 0}
+  - spawnLocation7: {instanceID: 0}
+  - suitEnemy: {fileID: 331509518699274622, guid: 6c2e28254bb89ce439fe0eb9a68c87b4,
+      type: 3}
+  - skeletonEnemy: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

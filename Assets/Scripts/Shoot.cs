@@ -25,99 +25,97 @@ public class Shoot : MonoBehaviour
     {
         RaycastHit hit = new RaycastHit();
 
-<<<<<<< HEAD
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit) && !isShooting)
-            {
-              
+        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit) && !isShooting)
+        {
+
             if (!(hit.transform.GetType() == typeof(Canvas)))
             {
                 if (Input.GetMouseButtonDown(0))
                 {
 
                     if (hit.transform.name == "Skeleton" && gunName == "Rainbow Gun")
-=======
-        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
-        {
-            Debug.Log(hit.transform.name);
 
-                if (Input.GetMouseButtonDown(0))
-                {
-
-                    if (hit.transform.name == "RainbowEnemie" && gunName =="RainbowGun")
->>>>>>> parent of f3f2fbf... Enemies and weapons working
-                    {
-                        EnemieScore targetEnemie = hit.transform.gameObject.GetComponent<EnemieScore>();
-                        
-                        if (targetEnemie.isActiveAndEnabled)
+                        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
                         {
-                            targetEnemie.addScoreObject();
-                            pointManager.getPoint();
-                        }
+                            Debug.Log(hit.transform.name);
 
-                    }
-
-<<<<<<< HEAD
-                    if (hit.transform.name == "MustacheEnemieSuit" && gunName == "Mustache Gun")
-                    {
-
-                        EnemieScore targetEnemie = hit.transform.gameObject.GetComponent<EnemieScore>();
-                        
-                        if (targetEnemie.isActiveAndEnabled)
-                        {
-                            targetEnemie.addScoreObject();
-                            pointManager.getPoint();
-                        }
-                    }
-=======
-                     if (hit.transform.name == "MustacheEnemie" && gunName == "MustacheGun")
-                    {
-                        EnemieScore targetEnemie = hit.transform.gameObject.GetComponent<EnemieScore>();
-                        targetEnemie.addScoreObject();
-                        pointManager.getPoint();
-                }
->>>>>>> parent of f3f2fbf... Enemies and weapons working
-
-                    if (hit.transform.name == "GorillaBoss")
-                    {
-                        EnemieScore targetEnemie = hit.transform.gameObject.GetComponent<EnemieScore>();
-
-                        if (targetEnemie.isActiveAndEnabled)
-                        {
-                            bossShots += 1;
-
-                            if(bossShots == 10)
+                            if (Input.GetMouseButtonDown(0))
                             {
-                                targetEnemie.addScoreObject();
-                                pointManager.getPoint();
+
+                                if (hit.transform.name == "RainbowEnemie" && gunName == "RainbowGun")
+                                {
+                                    EnemieScore targetEnemie = hit.transform.gameObject.GetComponent<EnemieScore>();
+
+                                    if (targetEnemie.isActiveAndEnabled)
+                                    {
+                                        targetEnemie.addScoreObject();
+                                        pointManager.getPoint();
+                                    }
+
+                                }
+
+
+                                if (hit.transform.name == "MustacheEnemieSuit" && gunName == "Mustache Gun")
+                                {
+
+                                    EnemieScore targetEnemie = hit.transform.gameObject.GetComponent<EnemieScore>();
+
+                                    if (targetEnemie.isActiveAndEnabled)
+                                    {
+                                        targetEnemie.addScoreObject();
+                                        pointManager.getPoint();
+                                    }
+                                }
+
+                                if (hit.transform.name == "MustacheEnemie" && gunName == "MustacheGun")
+                                {
+                                    EnemieScore targetEnemie = hit.transform.gameObject.GetComponent<EnemieScore>();
+                                    targetEnemie.addScoreObject();
+                                    pointManager.getPoint();
+                                }
+
+                                if (hit.transform.name == "GorillaBoss")
+                                {
+                                    EnemieScore targetEnemie = hit.transform.gameObject.GetComponent<EnemieScore>();
+
+                                    if (targetEnemie.isActiveAndEnabled)
+                                    {
+                                        bossShots += 1;
+
+                                        if (bossShots == 10)
+                                        {
+                                            targetEnemie.addScoreObject();
+                                            pointManager.getPoint();
+                                        }
+
+                                    }
+
+                                }
+
+                                else
+                                {
+                                    if (hit.transform.name == "Wall")
+                                    {
+                                        Instantiate(paint, hit.point, Quaternion.identity);
+                                        paint.transform.LookAt(hit.point + hit.normal);
+
+                                    }
+                                }
+                                Debug.Log("Hit nothing");
+
                             }
-                            
-                        }
-
-                    }
-
-                    else
-                    {
-                        if (hit.transform.name == "Wall")
-                        {
-                            Instantiate(paint, hit.point, Quaternion.identity);
-                            paint.transform.LookAt(hit.point + hit.normal);
 
                         }
-                    }
-                    Debug.Log("Hit nothing");
 
+                    Vector3 direction = hit.point - gun.position;
+                    gun.rotation = Quaternion.LookRotation(-direction);
                 }
-<<<<<<< HEAD
-=======
-            
->>>>>>> parent of f3f2fbf... Enemies and weapons working
             }
-
-            Vector3 direction = hit.point - gun.position;
-            gun.rotation = Quaternion.LookRotation(-direction);
         }
     }
-    
+
+        
+
     public IEnumerator ShootingTimer()
     {
         isShooting = true;
